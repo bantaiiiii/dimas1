@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Validasi Kartu ATM</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="valid.php"></script>
+</head>
+<body>
+  <img src="assets/visa.jpg" alt="truli" width="300" height="200">
+  <h1>Validasi Kartu</h1>
+  <form action="valid.php" method="post" id="form-valid">
+
+    <label for="nomor_kartu">Nomor Kartu:</label>
+    <input type="text" id="nomor_kartu" name="nomor_kartu" placeholder="Masukkan nomor kartu" oninput="validasiKartu()" maxlength="12">
+    <span id="validasi-status"></span>
+    <br><br>
+    <button type="submit">Validasi</button>
+  </form>
+
+  <script src="validasi-kartu.js"></script>
+
+</body>
+</html>
